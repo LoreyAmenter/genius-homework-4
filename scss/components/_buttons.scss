@@ -1,0 +1,75 @@
+.button {
+    width: 219px;
+    height: 53px;
+    color: var(--white);
+    background: var(--brand-color-light);
+    border: 0;
+    border-radius: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+    cursor: pointer;
+
+    &__arrow-btn {
+        display: none;
+        flex-shrink: 0;
+        cursor: pointer;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+        }
+    }
+    
+    &__arrow-btn:hover {
+        fill: var(--brand-color-light);
+        transition-duration: 0.2s;
+    }
+    
+    &__arrow-right {
+        transform: rotate(180deg);
+    }
+
+    &__description {
+        width: 224px;
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+.button:hover {
+    background: transparent;
+    color: var(--brand-color-dark);
+    border: 2px solid var(--brand-color-light);
+    border-radius: 32px;
+    transition-duration: 0.2s;
+}
+.modal-button {
+    width: 281px;
+    height: 52px;
+    color: var(--white);
+    background: var(--brand-color-light);
+    border: 0;
+    border-radius: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+    cursor: pointer;
+
+    &__close {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+}
+
+.modal-button:hover {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--brand-color-light);
+    border-radius: 32px;
+    transition-duration: 0.2s;
+}

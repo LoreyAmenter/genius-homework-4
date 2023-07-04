@@ -1,0 +1,31 @@
+.footer{
+
+    &__icons {
+        flex-grow: 1;
+        display: flex;
+        gap: 38px;
+
+        &--mobile{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 38px;
+        }
+    }
+    
+}
+
+.nav{
+
+    &__social-icons{
+        display: flex;
+        align-items: center;
+        gap: 42px;
+
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
+    }
+
+}

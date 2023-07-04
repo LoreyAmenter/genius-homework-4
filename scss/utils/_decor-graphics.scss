@@ -1,0 +1,54 @@
+.decor-star {
+    position: absolute;
+}
+
+.star1 {
+    position: static;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media screen and (min-width:$bp-desktop) {
+        position: absolute;
+        top: 335px;
+        left: 149px;
+    }
+}
+
+.star2 {
+    display: none;
+    top: 32px;
+    left: 500px;
+    animation-name: spin-reverse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: flex;
+    }
+}
+
+.star3 {
+    display: none;
+    top: 269px;
+    left: 504px;
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: flex;
+    }
+}
+.bg-gradient::after {
+    position: absolute;
+    z-index: -1;
+    width: 1849px;
+    height: 1785px;
+    background-size: 100%;
+    background-image: url("/images/background-gradient.png");
+    content: "";
+}

@@ -1,0 +1,21 @@
+.section-title {
+    color: var(--brand-color-dark);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.brand-color-text {
+    color: var(--brand-color-light);
+}
+
+.bold-text {
+    font-weight: bold;
+    color: var(--brand-color-light);
+    text-transform: capitalize;
+}
+
+.accent {
+    color: var(--brand-color-light);
+}

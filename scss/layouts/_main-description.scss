@@ -1,0 +1,35 @@
+.main-description {
+    color: var(--brand-color-dark);
+
+    &__container {
+        width: 100%;
+        display: flex;
+        overflow: visible;
+        justify-content: center;
+        @media screen and (min-width:$bp-desktop) {
+            max-width: 730px;
+            justify-content: flex-start;
+        }
+    }
+
+    &__title {
+        text-align: left;
+        width: 100%;
+        max-width: 520px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 610px;
+        flex-direction: column;
+    }
+
+    &__text:last-child {
+        margin-bottom: 0;
+    }
+
+    &__paragraph {
+        margin-bottom: 40px;
+    }
+}
